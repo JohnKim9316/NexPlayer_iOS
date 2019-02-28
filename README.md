@@ -1,9 +1,8 @@
 # NexPlayer SDK Quick Start
 
-This tutorial demonstrates how you are able to handle the NexPlayer SDK in iOS applications. In this tutorial, a sample player will be implemented in Objective-C with several buttons which control the player. UI will be built programmatically due to the fact that what cannot be done with NIBs and Storyboards can always be implemented with code.
+This tutorial demonstrates how you are able to handle the NexPlayer SDK in iOS applications. In this tutorial, a sample player will be implemented in Objective-C with several buttons which control the player.
 
 First thing you have to keep in mind before implementing NexPlayer SDK is that most of player methods behave __asynchronously__. There are numerous methods available in _NexPlayerDelegate.h_ which listen to what is happening in NexPlayer. Asynchronous approach is strongly recommended in NexPlayer SDK.
-
 
 ---
 
@@ -42,7 +41,7 @@ First thing you have to keep in mind before implementing NexPlayer SDK is that m
 
 
 ## Step #2. Import required frameworks
-1. Put __NexPlayerSDK.framework__ in your Xcode project folder.
+1. Copy __NexPlayerSDK.framework__ to your Xcode project folder.
 
 2. Go to Navigation Area in Xcode > XCODE PROJECT FILE(indicated by blue icon) > TARGETS > General > In Linked Frameworks and Libraries section, click the plus sign(+) to add frameworks and libraries on the list
 
@@ -666,4 +665,9 @@ Here is all the code in NexPlayerQuickStart.
 ---
 
 ## Step #8. Run Xcode and check your first NexPlayer.
-Click the Run button. You can find Run button which is the left-most button in Xcode tool bar. This will build and run your application and launch your app in the iOS Simulator. Now let's enjoy watching content in the iOS Simulator.
+Click the Run button. Now let's enjoy watching the content in the iOS Simulator.
+
+---
+
+## For more
+The NexPlayerSDK also supports the Widevine DRM. If you would like to integrate Widevine DRM, please refer to [NexPlayer QuickStart with Widevine](https://github.com/JohnKim9316/NexPlayer_iOS_Widevine).
